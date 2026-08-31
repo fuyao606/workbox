@@ -1,0 +1,56 @@
+# .NET build output
+bin/
+obj/
+publish/
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# IDE and local user files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local application data and evidence
+Screenshot/
+state/
+*.jsonl
+*.jsonl.zstd
+*.db
+*.db-shm
+*.db-wal
+
+# Personal report templates stay local and must never be committed.
+Templates/private/
+
+# Harness, UI loop and temporary workspaces
+.playwright-cli/
+.ui-loop/
+.tmp-*/
+.publish-pre-*/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.secrets.json
+secrets.json
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store

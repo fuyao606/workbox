@@ -1,0 +1,107 @@
+<Window x:Class="Timenotifier.Views.AutomationReviewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="日报自动化确认"
+        Width="920"
+        Height="680"
+        MinWidth="760"
+        MinHeight="560"
+        WindowStartupLocation="CenterOwner"
+        Style="{StaticResource TimenotifierWindowStyle}"
+        Background="{StaticResource AppBackgroundBrush}">
+    <Grid Margin="22">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="0,0,0,14">
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="ClipboardCheck"
+                                        Width="24"
+                                        Height="24"
+                                        Foreground="{StaticResource PrimaryBrush}"
+                                        Margin="0,0,9,0" />
+                <TextBlock Text="日报自动化确认"
+                           FontSize="22"
+                           FontWeight="SemiBold"
+                           Foreground="{StaticResource TextBrush}" />
+            </StackPanel>
+            <TextBlock x:Name="StatusText"
+                       Margin="0,6,0,0"
+                       FontSize="13"
+                       Foreground="{StaticResource MutedBrush}"
+                       TextWrapping="Wrap" />
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="320" />
+                <ColumnDefinition Width="14" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Border Style="{StaticResource TimenotifierCardStyle}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="日报纯文本"
+                               FontWeight="SemiBold"
+                               Foreground="{StaticResource TextBrush}"
+                               Margin="0,0,0,10" />
+                    <TextBox x:Name="DailyTextBox"
+                             Grid.Row="1"
+                             AcceptsReturn="True"
+                             TextWrapping="Wrap"
+                             VerticalScrollBarVisibility="Auto" />
+                </Grid>
+            </Border>
+
+            <Border Grid.Column="2"
+                    Style="{StaticResource TimenotifierCardStyle}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock x:Name="ScreenshotTitleText"
+                               Text="提交前确认截图"
+                               FontWeight="SemiBold"
+                               Foreground="{StaticResource TextBrush}"
+                               Margin="0,0,0,10" />
+                    <ScrollViewer Grid.Row="1"
+                                  HorizontalScrollBarVisibility="Auto"
+                                  VerticalScrollBarVisibility="Auto">
+                        <Image x:Name="ScreenshotImage"
+                               Stretch="Uniform"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top" />
+                    </ScrollViewer>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <DockPanel Grid.Row="2"
+                   Margin="0,16,0,0">
+            <Button x:Name="CancelButton"
+                    Content="取消"
+                    Width="110"
+                    Height="36"
+                    DockPanel.Dock="Right"
+                    Style="{StaticResource TimenotifierSecondaryButtonStyle}"
+                    Click="OnCancelClicked" />
+            <Button x:Name="ConfirmButton"
+                    Content="确认提交"
+                    Width="126"
+                    Height="36"
+                    Margin="0,0,10,0"
+                    DockPanel.Dock="Right"
+                    Style="{StaticResource TimenotifierPrimaryButtonStyle}"
+                    Click="OnConfirmClicked" />
+        </DockPanel>
+    </Grid>
+</Window>

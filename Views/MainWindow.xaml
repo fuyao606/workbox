@@ -1,0 +1,126 @@
+<Window x:Class="Timenotifier.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Timenotifier"
+        Width="116"
+        Height="52"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        ShowActivated="False"
+        Topmost="True"
+        FontFamily="{StaticResource TimenotifierFontFamily}"
+        MouseLeftButtonDown="OnMouseLeftButtonDown"
+        MouseRightButtonUp="OnMouseRightButtonUp">
+    <Window.Resources>
+        <materialDesign:PackIcon x:Key="FloatingBallMaterialIcon"
+                                 Kind="Camera" />
+    </Window.Resources>
+    <Border x:Name="FloatingSurface"
+            Background="Transparent"
+            BorderThickness="0"
+            Padding="0"
+            Margin="0">
+        <Grid>
+            <Grid x:Name="ExpandedContent"
+                  Width="116"
+                  Height="52"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top">
+                <Border Width="80"
+                        Height="52"
+                        HorizontalAlignment="Left"
+                        Background="{StaticResource FloatingBallSurfaceBrush}"
+                        CornerRadius="12,0,0,12"
+                        BorderBrush="#22FFFFFF"
+                        BorderThickness="1,1,0,1"
+                        ClipToBounds="True">
+                    <TextBlock x:Name="ClockText"
+                               Text="00:00:00"
+                               Foreground="{StaticResource FloatingBallClockBrush}"
+                               FontSize="17"
+                               FontWeight="SemiBold"
+                               FontFamily="Segoe UI Variable Display, Segoe UI"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               TextTrimming="None" />
+                </Border>
+
+                <Border Width="36"
+                        Height="52"
+                        HorizontalAlignment="Right"
+                        Background="{StaticResource FloatingBallToolbarBrush}"
+                        CornerRadius="0,12,12,0"
+                        BorderBrush="#1FFFFFFF"
+                        BorderThickness="1">
+                    <StackPanel Orientation="Vertical"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                        <Border Width="17"
+                                Height="17"
+                                Margin="0,0,0,3"
+                                CornerRadius="8.5"
+                                Background="{StaticResource FloatingBallButtonBrush}"
+                                Cursor="Hand"
+                                MouseLeftButtonDown="OnIconMouseLeftButtonDown"
+                                MouseLeftButtonUp="OnScreenshotIconClick">
+                            <Path Data="M 4 7 L 7 7 L 8 5 L 12 5 L 13 7 L 16 7 L 16 15 L 4 15 Z M 10 9 A 2 2 0 1 0 10 13 A 2 2 0 1 0 10 9"
+                                  Fill="#D9FFFFFF"
+                                  Stretch="Uniform"
+                                  Width="11"
+                                  Height="11"
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center" />
+                        </Border>
+                        <Border Width="17"
+                                Height="17"
+                                CornerRadius="8.5"
+                                Background="{StaticResource FloatingBallButtonBrush}"
+                                Cursor="Hand"
+                                MouseLeftButtonDown="OnIconMouseLeftButtonDown"
+                                MouseLeftButtonUp="OnHideIconClick">
+                            <Path Data="M 10 7 L 17 12 L 10 17 Z"
+                                  Fill="#74FFFFFF"
+                                  Stretch="Uniform"
+                                  Width="6"
+                                  Height="7"
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center" />
+                        </Border>
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+            <Grid x:Name="DockedContent"
+                  Visibility="Collapsed">
+                <Border x:Name="DockedHandle"
+                        Background="{StaticResource FloatingBallToolbarBrush}"
+                        BorderBrush="#24FFFFFF"
+                        BorderThickness="1" />
+                <Border Width="19"
+                        Height="19"
+                        CornerRadius="9.5"
+                        Background="{StaticResource FloatingBallButtonBrush}"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Cursor="Hand"
+                        MouseLeftButtonDown="OnIconMouseLeftButtonDown"
+                        MouseLeftButtonUp="OnDockedIconClick">
+                    <Path Data="M 17 7 L 10 12 L 17 17 Z"
+                          Fill="#F8FFFFFF"
+                          Stretch="Uniform"
+                          Width="7"
+                          Height="8"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center" />
+                </Border>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

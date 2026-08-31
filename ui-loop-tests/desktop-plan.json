@@ -1,0 +1,1683 @@
+{
+  "schemaVersion": "ui-loop/v1",
+  "generatedAt": "2026-08-04T08:19:15.494Z",
+  "projectRoot": "D:\\Code\\workbox",
+  "cases": [
+    {
+      "id": "desktop-window-记录完成事项",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ManualEvidenceWindow.xaml",
+      "title": "Open window 记录完成事项",
+      "kind": "smoke",
+      "launchArgs": [],
+      "quality": {
+        "tier": "smoke",
+        "checks": [
+          "Verifies that the window opens and captures a screenshot.",
+          "Does not assert product behavior."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "记录完成事项",
+            "className": "Timenotifier.Views.ManualEvidenceWindow",
+            "automationId": null,
+            "name": "记录完成事项",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ManualEvidenceWindow.xaml"
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "window-记录完成事项.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ManualEvidenceWindow.xaml",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "desktop-window-日报自动化确认",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:AutomationReviewWindow.xaml",
+      "title": "Open window 日报自动化确认",
+      "kind": "smoke",
+      "launchArgs": [],
+      "quality": {
+        "tier": "smoke",
+        "checks": [
+          "Verifies that the window opens and captures a screenshot.",
+          "Does not assert product behavior."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "日报自动化确认",
+            "className": "Timenotifier.Views.AutomationReviewWindow",
+            "automationId": null,
+            "name": "日报自动化确认",
+            "sourceFile": "D:\\Code\\workbox\\Views\\AutomationReviewWindow.xaml"
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "window-日报自动化确认.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\AutomationReviewWindow.xaml",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "desktop-window-AssistantPage-xaml",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:AssistantPage.xaml",
+      "title": "Open window AssistantPage.xaml",
+      "kind": "smoke",
+      "launchArgs": [],
+      "quality": {
+        "tier": "smoke",
+        "checks": [
+          "Verifies that the window opens and captures a screenshot.",
+          "Does not assert product behavior."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "AssistantPage.xaml",
+            "className": "Timenotifier.Views.Assistant.AssistantPage",
+            "automationId": null,
+            "name": "AssistantPage.xaml",
+            "sourceFile": "D:\\Code\\workbox\\Views\\Assistant\\AssistantPage.xaml"
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "window-AssistantPage-xaml.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\Assistant\\AssistantPage.xaml",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "desktop-window-ReminderPopupWindow-xaml",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ReminderPopupWindow.xaml",
+      "title": "Open window ReminderPopupWindow.xaml",
+      "kind": "smoke",
+      "launchArgs": [],
+      "quality": {
+        "tier": "smoke",
+        "checks": [
+          "Verifies that the window opens and captures a screenshot.",
+          "Does not assert product behavior."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "ReminderPopupWindow.xaml",
+            "className": "Timenotifier.Views.ReminderPopupWindow",
+            "automationId": null,
+            "name": "ReminderPopupWindow.xaml",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ReminderPopupWindow.xaml"
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "window-ReminderPopupWindow-xaml.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ReminderPopupWindow.xaml",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "desktop-window-Timenotifier",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:MainWindow.xaml",
+      "title": "Open window Timenotifier",
+      "kind": "smoke",
+      "launchArgs": [],
+      "quality": {
+        "tier": "smoke",
+        "checks": [
+          "Verifies that the window opens and captures a screenshot.",
+          "Does not assert product behavior."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier",
+            "className": "Timenotifier.Views.MainWindow",
+            "automationId": null,
+            "name": "Timenotifier",
+            "sourceFile": "D:\\Code\\workbox\\Views\\MainWindow.xaml"
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "window-Timenotifier.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\MainWindow.xaml",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "desktop-window-Timenotifier-配置中心",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Open window Timenotifier 配置中心",
+      "kind": "smoke",
+      "launchArgs": [],
+      "quality": {
+        "tier": "smoke",
+        "checks": [
+          "Verifies that the window opens and captures a screenshot.",
+          "Does not assert product behavior."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "window-Timenotifier-配置中心.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-记录完成事项-保存",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ManualEvidenceWindow.xaml",
+      "title": "Interact with 保存 in 记录完成事项",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "记录完成事项",
+            "className": "Timenotifier.Views.ManualEvidenceWindow",
+            "automationId": null,
+            "name": "记录完成事项",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ManualEvidenceWindow.xaml"
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "Button:ManualEvidenceWindow.xaml:2280",
+            "kind": "Button",
+            "name": "保存",
+            "automationId": null,
+            "clickHandler": "OnSaveClicked",
+            "dataTemplate": false,
+            "tab": null,
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ManualEvidenceWindow.xaml",
+              "line": 53
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-记录完成事项-保存.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ManualEvidenceWindow.xaml",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-Timenotifier-配置中心-保存采集设置",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Interact with 保存采集设置 in Timenotifier 配置中心",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "select-tab",
+          "tab": {
+            "name": "采集",
+            "header": "采集",
+            "automationId": "TabCapture",
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1356
+            }
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "Button:ConfigurationWindow.xaml:100649",
+            "kind": "Button",
+            "name": "保存采集设置",
+            "automationId": null,
+            "clickHandler": "OnSaveCaptureSettingsClicked",
+            "dataTemplate": false,
+            "tab": {
+              "name": "采集",
+              "header": "采集",
+              "automationId": "TabCapture",
+              "source": {
+                "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+                "line": 1356
+              }
+            },
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1495
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-Timenotifier-配置中心-保存采集设置.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 1495
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-Timenotifier-配置中心-保存草稿",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Interact with 保存草稿 in Timenotifier 配置中心",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "select-tab",
+          "tab": {
+            "name": "报告",
+            "header": "报告",
+            "automationId": "TabReport",
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1061
+            }
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "Button:ConfigurationWindow.xaml:89417",
+            "kind": "Button",
+            "name": "保存草稿",
+            "automationId": null,
+            "clickHandler": "OnSaveDraftClicked",
+            "dataTemplate": false,
+            "tab": {
+              "name": "报告",
+              "header": "报告",
+              "automationId": "TabReport",
+              "source": {
+                "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+                "line": 1061
+              }
+            },
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1320
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-Timenotifier-配置中心-保存草稿.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 1320
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-Timenotifier-配置中心-保存模型配置",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Interact with 保存模型配置 in Timenotifier 配置中心",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "select-tab",
+          "tab": {
+            "name": "模型",
+            "header": "模型",
+            "automationId": "TabModel",
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 515
+            }
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "Button:ConfigurationWindow.xaml:39879",
+            "kind": "Button",
+            "name": "保存模型配置",
+            "automationId": null,
+            "clickHandler": "OnSaveModelClicked",
+            "dataTemplate": false,
+            "tab": {
+              "name": "模型",
+              "header": "模型",
+              "automationId": "TabModel",
+              "source": {
+                "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+                "line": 515
+              }
+            },
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 649
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-Timenotifier-配置中心-保存模型配置.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 649
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-Timenotifier-配置中心-保存任务配置",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Interact with 保存任务配置 in Timenotifier 配置中心",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "select-tab",
+          "tab": {
+            "name": "任务",
+            "header": "任务",
+            "automationId": "TabTask",
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1506
+            }
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "Button:ConfigurationWindow.xaml:103359",
+            "kind": "Button",
+            "name": "保存任务配置",
+            "automationId": null,
+            "clickHandler": "OnSaveDailyAutomationSettingsClicked",
+            "dataTemplate": false,
+            "tab": {
+              "name": "任务",
+              "header": "任务",
+              "automationId": "TabTask",
+              "source": {
+                "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+                "line": 1506
+              }
+            },
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1538
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-Timenotifier-配置中心-保存任务配置.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 1538
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-Timenotifier-配置中心-保存提醒配置",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Interact with 保存提醒配置 in Timenotifier 配置中心",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "select-tab",
+          "tab": {
+            "name": "提醒",
+            "header": "提醒",
+            "automationId": "TabReminders",
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 355
+            }
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "Button:ConfigurationWindow.xaml:24426",
+            "kind": "Button",
+            "name": "保存提醒配置",
+            "automationId": null,
+            "clickHandler": "OnSaveRemindersClicked",
+            "dataTemplate": false,
+            "tab": {
+              "name": "提醒",
+              "header": "提醒",
+              "automationId": "TabReminders",
+              "source": {
+                "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+                "line": 355
+              }
+            },
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 410
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-Timenotifier-配置中心-保存提醒配置.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 410
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-Timenotifier-配置中心-报告",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Interact with 报告 in Timenotifier 配置中心",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "select-tab",
+          "tab": {
+            "name": "报告",
+            "header": "报告",
+            "automationId": "TabReport",
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1061
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-Timenotifier-配置中心-报告.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 1061
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-Timenotifier-配置中心-采集",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Interact with 采集 in Timenotifier 配置中心",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "select-tab",
+          "tab": {
+            "name": "采集",
+            "header": "采集",
+            "automationId": "TabCapture",
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1356
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-Timenotifier-配置中心-采集.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 1356
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-Timenotifier-配置中心-测试-Analysis",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Interact with 测试 Analysis in Timenotifier 配置中心",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "select-tab",
+          "tab": {
+            "name": "模型",
+            "header": "模型",
+            "automationId": "TabModel",
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 515
+            }
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "Button:ConfigurationWindow.xaml:39275",
+            "kind": "Button",
+            "name": "测试 Analysis",
+            "automationId": null,
+            "clickHandler": "OnTestAnalysisClicked",
+            "dataTemplate": false,
+            "tab": {
+              "name": "模型",
+              "header": "模型",
+              "automationId": "TabModel",
+              "source": {
+                "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+                "line": 515
+              }
+            },
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 641
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-Timenotifier-配置中心-测试-Analysis.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 641
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-Timenotifier-配置中心-测试-ImageGeneration",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Interact with 测试 ImageGeneration in Timenotifier 配置中心",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "select-tab",
+          "tab": {
+            "name": "模型",
+            "header": "模型",
+            "automationId": "TabModel",
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 515
+            }
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "Button:ConfigurationWindow.xaml:39570",
+            "kind": "Button",
+            "name": "测试 ImageGeneration",
+            "automationId": null,
+            "clickHandler": "OnTestImageGenerationClicked",
+            "dataTemplate": false,
+            "tab": {
+              "name": "模型",
+              "header": "模型",
+              "automationId": "TabModel",
+              "source": {
+                "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+                "line": 515
+              }
+            },
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 645
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-Timenotifier-配置中心-测试-ImageGeneration.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 645
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-Timenotifier-配置中心-打开登录浏览器",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Interact with 打开登录浏览器 in Timenotifier 配置中心",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "select-tab",
+          "tab": {
+            "name": "任务",
+            "header": "任务",
+            "automationId": "TabTask",
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1506
+            }
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "Button:ConfigurationWindow.xaml:102751",
+            "kind": "Button",
+            "name": "打开登录浏览器",
+            "automationId": null,
+            "clickHandler": "OnOpenDailyAutomationLoginBrowserClicked",
+            "dataTemplate": false,
+            "tab": {
+              "name": "任务",
+              "header": "任务",
+              "automationId": "TabTask",
+              "source": {
+                "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+                "line": 1506
+              }
+            },
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1530
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-Timenotifier-配置中心-打开登录浏览器.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 1530
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-AssistantPage-xaml-打开详情",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:AssistantPage.xaml",
+      "title": "Interact with 打开详情 in AssistantPage.xaml",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "AssistantPage.xaml",
+            "className": "Timenotifier.Views.Assistant.AssistantPage",
+            "automationId": null,
+            "name": "AssistantPage.xaml",
+            "sourceFile": "D:\\Code\\workbox\\Views\\Assistant\\AssistantPage.xaml"
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "Button:AssistantPage.xaml:7821",
+            "kind": "Button",
+            "name": "打开详情",
+            "automationId": "OpenAssistantModuleButton",
+            "clickHandler": "OnOpenModuleClicked",
+            "dataTemplate": false,
+            "tab": null,
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\Assistant\\AssistantPage.xaml",
+              "line": 153
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-AssistantPage-xaml-打开详情.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\Assistant\\AssistantPage.xaml",
+          "line": 153
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-Timenotifier-配置中心-打开证据管理",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Interact with 打开证据管理 in Timenotifier 配置中心",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "select-tab",
+          "tab": {
+            "name": "回顾",
+            "header": "回顾",
+            "automationId": "TabReview",
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 763
+            }
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "Button:ConfigurationWindow.xaml:49485",
+            "kind": "Button",
+            "name": "打开证据管理",
+            "automationId": null,
+            "clickHandler": "OnOpenEvidenceManagementClicked",
+            "dataTemplate": false,
+            "tab": {
+              "name": "回顾",
+              "header": "回顾",
+              "automationId": "TabReview",
+              "source": {
+                "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+                "line": 763
+              }
+            },
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 801
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-Timenotifier-配置中心-打开证据管理.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 801
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-Timenotifier-配置中心-导出企业周报-Excel",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Interact with 导出企业周报 Excel in Timenotifier 配置中心",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "select-tab",
+          "tab": {
+            "name": "报告",
+            "header": "报告",
+            "automationId": "TabReport",
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1061
+            }
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "Button:ConfigurationWindow.xaml:88218",
+            "kind": "Button",
+            "name": "导出企业周报 Excel",
+            "automationId": null,
+            "clickHandler": "OnExportEnterpriseWeeklyExcelClicked",
+            "dataTemplate": false,
+            "tab": {
+              "name": "报告",
+              "header": "报告",
+              "automationId": "TabReport",
+              "source": {
+                "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+                "line": 1061
+              }
+            },
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1304
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-Timenotifier-配置中心-导出企业周报-Excel.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 1304
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-Timenotifier-配置中心-导出学校周报-Excel",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Interact with 导出学校周报 Excel in Timenotifier 配置中心",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "select-tab",
+          "tab": {
+            "name": "报告",
+            "header": "报告",
+            "automationId": "TabReport",
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1061
+            }
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "Button:ConfigurationWindow.xaml:88528",
+            "kind": "Button",
+            "name": "导出学校周报 Excel",
+            "automationId": null,
+            "clickHandler": "OnExportSchoolWeeklyExcelClicked",
+            "dataTemplate": false,
+            "tab": {
+              "name": "报告",
+              "header": "报告",
+              "automationId": "TabReport",
+              "source": {
+                "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+                "line": 1061
+              }
+            },
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1308
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-Timenotifier-配置中心-导出学校周报-Excel.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 1308
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-AssistantPage-xaml-发送",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:AssistantPage.xaml",
+      "title": "Interact with 发送 in AssistantPage.xaml",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "AssistantPage.xaml",
+            "className": "Timenotifier.Views.Assistant.AssistantPage",
+            "automationId": null,
+            "name": "AssistantPage.xaml",
+            "sourceFile": "D:\\Code\\workbox\\Views\\Assistant\\AssistantPage.xaml"
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "SendButton",
+            "kind": "Button",
+            "name": "发送",
+            "automationId": "SendAssistantMessageButton",
+            "clickHandler": "OnSendClicked",
+            "dataTemplate": false,
+            "tab": null,
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\Assistant\\AssistantPage.xaml",
+              "line": 304
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-AssistantPage-xaml-发送.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\Assistant\\AssistantPage.xaml",
+          "line": 304
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-Timenotifier-配置中心-复制-Markdown",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Interact with 复制 Markdown in Timenotifier 配置中心",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "select-tab",
+          "tab": {
+            "name": "报告",
+            "header": "报告",
+            "automationId": "TabReport",
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1061
+            }
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "Button:ConfigurationWindow.xaml:88834",
+            "kind": "Button",
+            "name": "复制 Markdown",
+            "automationId": null,
+            "clickHandler": "OnCopyMarkdownClicked",
+            "dataTemplate": false,
+            "tab": {
+              "name": "报告",
+              "header": "报告",
+              "automationId": "TabReport",
+              "source": {
+                "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+                "line": 1061
+              }
+            },
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1312
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-Timenotifier-配置中心-复制-Markdown.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 1312
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-Timenotifier-配置中心-复制纯文本",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Interact with 复制纯文本 in Timenotifier 配置中心",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "select-tab",
+          "tab": {
+            "name": "报告",
+            "header": "报告",
+            "automationId": "TabReport",
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1061
+            }
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "Button:ConfigurationWindow.xaml:89128",
+            "kind": "Button",
+            "name": "复制纯文本",
+            "automationId": null,
+            "clickHandler": "OnCopyPlainTextClicked",
+            "dataTemplate": false,
+            "tab": {
+              "name": "报告",
+              "header": "报告",
+              "automationId": "TabReport",
+              "source": {
+                "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+                "line": 1061
+              }
+            },
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1316
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-Timenotifier-配置中心-复制纯文本.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 1316
+        }
+      ]
+    },
+    {
+      "id": "desktop-interact-Timenotifier-配置中心-关闭",
+      "adapter": "windows-desktop",
+      "targetId": "desktop:window:ConfigurationWindow.xaml",
+      "title": "Interact with 关闭 in Timenotifier 配置中心",
+      "kind": "interaction",
+      "launchArgs": [],
+      "safety": {
+        "risk": "enabled",
+        "reason": "Interaction is enabled by default; only deletion-like actions are blocked."
+      },
+      "quality": {
+        "tier": "interaction",
+        "checks": [
+          "Invokes a supported desktop control and captures evidence.",
+          "Needs a user-observable state assertion before it is production-grade."
+        ],
+        "productionGrade": false,
+        "gaps": [
+          "Add user-observable assertions for navigation, persisted state, validation, dialog state, or emitted UI feedback."
+        ]
+      },
+      "enabledByDefault": true,
+      "steps": [
+        {
+          "action": "ensure-window",
+          "target": {
+            "title": "Timenotifier 配置中心",
+            "className": "Timenotifier.Views.ConfigurationWindow",
+            "automationId": null,
+            "name": "Timenotifier 配置中心",
+            "sourceFile": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml"
+          }
+        },
+        {
+          "action": "invoke",
+          "control": {
+            "id": "Button:ConfigurationWindow.xaml:113332",
+            "kind": "Button",
+            "name": "关闭",
+            "automationId": null,
+            "clickHandler": "OnCloseClicked",
+            "dataTemplate": false,
+            "tab": null,
+            "source": {
+              "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+              "line": 1698
+            }
+          }
+        },
+        {
+          "action": "screenshot",
+          "name": "desktop-Timenotifier-配置中心-关闭.png"
+        }
+      ],
+      "codeLocations": [
+        {
+          "file": "D:\\Code\\workbox\\Views\\ConfigurationWindow.xaml",
+          "line": 1698
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <FontFamily x:Key="TimenotifierFontFamily">Microsoft YaHei UI, Segoe UI Variable, Segoe UI</FontFamily>
+
+    <Color x:Key="TimenotifierCanvasColor">#F6F8F9</Color>
+    <Color x:Key="TimenotifierSurfaceColor">#FFFFFF</Color>
+    <Color x:Key="TimenotifierSubtleSurfaceColor">#EFF4F3</Color>
+    <Color x:Key="TimenotifierPrimaryColor">#006C5B</Color>
+    <Color x:Key="TimenotifierPrimaryHoverColor">#005B4D</Color>
+    <Color x:Key="TimenotifierPrimaryPressedColor">#00483E</Color>
+    <Color x:Key="TimenotifierAmberColor">#9A6200</Color>
+    <Color x:Key="TimenotifierTextColor">#1A2422</Color>
+    <Color x:Key="TimenotifierMutedColor">#5F6F6B</Color>
+    <Color x:Key="TimenotifierOutlineColor">#C7D3CF</Color>
+    <Color x:Key="TimenotifierFloatingSurfaceColor">#F11B2532</Color>
+    <Color x:Key="TimenotifierFloatingToolbarColor">#F2293447</Color>
+    <Color x:Key="TimenotifierFloatingButtonColor">#102F3A4D</Color>
+    <Color x:Key="TimenotifierFloatingClockColor">#F8FFFFFF</Color>
+
+    <SolidColorBrush x:Key="AppBackgroundBrush" Color="{StaticResource TimenotifierCanvasColor}" />
+    <SolidColorBrush x:Key="ShellBrush" Color="{StaticResource TimenotifierCanvasColor}" />
+    <SolidColorBrush x:Key="SurfaceBrush" Color="{StaticResource TimenotifierSurfaceColor}" />
+    <SolidColorBrush x:Key="SubtleSurfaceBrush" Color="{StaticResource TimenotifierSubtleSurfaceColor}" />
+    <SolidColorBrush x:Key="TintSurfaceBrush" Color="#E3F2EE" />
+    <SolidColorBrush x:Key="BorderBrushModern" Color="{StaticResource TimenotifierOutlineColor}" />
+    <SolidColorBrush x:Key="SoftBorderBrush" Color="#DDE6E3" />
+    <SolidColorBrush x:Key="LineBrush" Color="#D3DEDA" />
+    <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource TimenotifierPrimaryColor}" />
+    <SolidColorBrush x:Key="PrimaryHoverBrush" Color="{StaticResource TimenotifierPrimaryHoverColor}" />
+    <SolidColorBrush x:Key="PrimaryPressedBrush" Color="{StaticResource TimenotifierPrimaryPressedColor}" />
+    <SolidColorBrush x:Key="AccentBlueBrush" Color="#2B658D" />
+    <SolidColorBrush x:Key="TextBrush" Color="{StaticResource TimenotifierTextColor}" />
+    <SolidColorBrush x:Key="MutedBrush" Color="{StaticResource TimenotifierMutedColor}" />
+    <SolidColorBrush x:Key="FaintTextBrush" Color="#7B8A86" />
+    <SolidColorBrush x:Key="WarningBrush" Color="{StaticResource TimenotifierAmberColor}" />
+    <SolidColorBrush x:Key="WarningSurfaceBrush" Color="#FFF4D9" />
+    <SolidColorBrush x:Key="DangerBrush" Color="#AD3E3E" />
+    <SolidColorBrush x:Key="FloatingBallSurfaceBrush" Color="{StaticResource TimenotifierFloatingSurfaceColor}" />
+    <SolidColorBrush x:Key="FloatingBallToolbarBrush" Color="{StaticResource TimenotifierFloatingToolbarColor}" />
+    <SolidColorBrush x:Key="FloatingBallButtonBrush" Color="{StaticResource TimenotifierFloatingButtonColor}" />
+    <SolidColorBrush x:Key="FloatingBallClockBrush" Color="{StaticResource TimenotifierFloatingClockColor}" />
+
+    <CornerRadius x:Key="ShellRadius">6</CornerRadius>
+    <CornerRadius x:Key="TimenotifierControlRadius">4</CornerRadius>
+    <Thickness x:Key="PagePadding">20</Thickness>
+    <Thickness x:Key="TimenotifierControlPadding">12,7</Thickness>
+    <DropShadowEffect x:Key="ShellShadow" BlurRadius="10" ShadowDepth="1" Opacity="0.08" Color="#2B3935" />
+
+    <Style x:Key="TimenotifierWindowStyle"
+           TargetType="{x:Type Window}"
+           BasedOn="{StaticResource MaterialDesignWindow}">
+        <Setter Property="FontFamily" Value="{StaticResource TimenotifierFontFamily}" />
+        <Setter Property="Background" Value="{StaticResource AppBackgroundBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+    </Style>
+
+    <Style x:Key="TimenotifierCardStyle" TargetType="{x:Type Border}">
+        <Setter Property="Background" Value="{StaticResource SurfaceBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource SoftBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="CornerRadius" Value="{StaticResource ShellRadius}" />
+        <Setter Property="Padding" Value="16" />
+    </Style>
+    <Style x:Key="TimenotifierPrimaryButtonStyle"
+           TargetType="{x:Type Button}"
+           BasedOn="{StaticResource {x:Type Button}}">
+        <Setter Property="Background" Value="{StaticResource PrimaryBrush}" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}" />
+        <Setter Property="Padding" Value="16,8" />
+        <Setter Property="MinHeight" Value="36" />
+        <Setter Property="FontFamily" Value="{StaticResource TimenotifierFontFamily}" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Cursor" Value="Hand" />
+    </Style>
+    <Style x:Key="TimenotifierSecondaryButtonStyle"
+           TargetType="{x:Type Button}"
+           BasedOn="{StaticResource TimenotifierPrimaryButtonStyle}">
+        <Setter Property="Background" Value="{StaticResource SurfaceBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource BorderBrushModern}" />
+    </Style>
+    <Style x:Key="TimenotifierDangerButtonStyle"
+           TargetType="{x:Type Button}"
+           BasedOn="{StaticResource TimenotifierSecondaryButtonStyle}">
+        <Setter Property="Foreground" Value="{StaticResource DangerBrush}" />
+        <Setter Property="BorderBrush" Value="#DDB7B7" />
+    </Style>
+    <Style x:Key="TimenotifierCompactButtonStyle"
+           TargetType="{x:Type Button}"
+           BasedOn="{StaticResource TimenotifierSecondaryButtonStyle}">
+        <Setter Property="Padding" Value="10,5" />
+        <Setter Property="MinHeight" Value="30" />
+        <Setter Property="FontSize" Value="12" />
+    </Style>
+
+    <Style x:Key="ShellContainerStyle" TargetType="{x:Type Border}">
+        <Setter Property="Margin" Value="18" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Padding" Value="0" />
+    </Style>
+    <Style x:Key="HeaderAreaStyle" TargetType="{x:Type Border}">
+        <Setter Property="Margin" Value="0,0,0,18" />
+        <Setter Property="Padding" Value="4,0,4,16" />
+        <Setter Property="BorderBrush" Value="{StaticResource LineBrush}" />
+        <Setter Property="BorderThickness" Value="0,0,0,1" />
+    </Style>
+    <Style x:Key="HeaderStatusBadgeStyle" TargetType="{x:Type Border}">
+        <Setter Property="Background" Value="{StaticResource SubtleSurfaceBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource SoftBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="CornerRadius" Value="4" />
+        <Setter Property="Padding" Value="10,6" />
+    </Style>
+    <Style x:Key="PreviewButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource TimenotifierCompactButtonStyle}">
+        <Setter Property="Background" Value="{StaticResource TintSurfaceBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}" />
+        <Setter Property="BorderBrush" Value="#A9D2C7" />
+    </Style>
+    <Style x:Key="GridEllipsisTextStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+        <Setter Property="TextTrimming" Value="CharacterEllipsis" />
+        <Setter Property="TextWrapping" Value="NoWrap" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="ToolTip" Value="{Binding Text, RelativeSource={RelativeSource Self}}" />
+    </Style>
+    <Style x:Key="SurfacePanelStyle" TargetType="{x:Type Border}" BasedOn="{StaticResource TimenotifierCardStyle}">
+        <Setter Property="CornerRadius" Value="6" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="18" />
+    </Style>
+    <Style x:Key="ReminderPanelStyle" TargetType="{x:Type Border}" BasedOn="{StaticResource SurfacePanelStyle}" />
+    <Style x:Key="ReminderTitleStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+    </Style>
+    <Style x:Key="ReminderHintStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Foreground" Value="{StaticResource MutedBrush}" />
+    </Style>
+    <Style x:Key="ReminderCompactTextBoxStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="MinHeight" Value="32" />
+        <Setter Property="Padding" Value="8,5" />
+    </Style>
+    <Style x:Key="ImportantPathTextBoxStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="FontFamily" Value="Consolas, Microsoft YaHei UI" />
+        <Setter Property="FontSize" Value="12" />
+    </Style>
+    <Style x:Key="ConfigurationDataGridColumnHeaderStyle"
+           TargetType="{x:Type DataGridColumnHeader}">
+        <Setter Property="Background" Value="{StaticResource SubtleSurfaceBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource SoftBorderBrush}" />
+        <Setter Property="BorderThickness" Value="0,0,0,1" />
+        <Setter Property="Padding" Value="10,7" />
+        <Setter Property="MinHeight" Value="36" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+    </Style>
+    <Style x:Key="ConfigurationDataGridCellStyle"
+           TargetType="{x:Type DataGridCell}">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource SoftBorderBrush}" />
+        <Setter Property="BorderThickness" Value="0,0,0,1" />
+        <Setter Property="Padding" Value="10,4" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+    </Style>
+    <Style x:Key="ConfigurationDataGridRowStyle"
+           TargetType="{x:Type DataGridRow}">
+        <Setter Property="Background" Value="{StaticResource SurfaceBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource SoftBorderBrush}" />
+        <Setter Property="BorderThickness" Value="0,0,0,1" />
+    </Style>
+    <Style x:Key="ReminderDataGridStyle" TargetType="{x:Type DataGrid}">
+        <Setter Property="AutoGenerateColumns" Value="False" />
+        <Setter Property="CanUserAddRows" Value="False" />
+        <Setter Property="CanUserReorderColumns" Value="False" />
+        <Setter Property="RowHeight" Value="36" />
+        <Setter Property="HeadersVisibility" Value="Column" />
+        <Setter Property="GridLinesVisibility" Value="Horizontal" />
+        <Setter Property="Background" Value="{StaticResource SurfaceBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource SoftBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="RowBackground" Value="{StaticResource SurfaceBrush}" />
+        <Setter Property="AlternatingRowBackground" Value="#FAFCFB" />
+        <Setter Property="AlternationCount" Value="2" />
+        <Setter Property="HorizontalGridLinesBrush" Value="{StaticResource SoftBorderBrush}" />
+        <Setter Property="ColumnHeaderStyle" Value="{StaticResource ConfigurationDataGridColumnHeaderStyle}" />
+        <Setter Property="CellStyle" Value="{StaticResource ConfigurationDataGridCellStyle}" />
+        <Setter Property="RowStyle" Value="{StaticResource ConfigurationDataGridRowStyle}" />
+    </Style>
+    <Style x:Key="SectionHeaderStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+    </Style>
+    <Style x:Key="SectionHintStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Foreground" Value="{StaticResource MutedBrush}" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+    </Style>
+    <Style x:Key="PageTitleStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+    </Style>
+    <Style x:Key="FieldLabelStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Foreground" Value="{StaticResource MutedBrush}" />
+        <Setter Property="Margin" Value="0,0,0,5" />
+    </Style>
+    <Style x:Key="MutedTextStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground" Value="{StaticResource MutedBrush}" />
+        <Setter Property="FontSize" Value="12" />
+    </Style>
+    <Style x:Key="ActionBarStyle" TargetType="{x:Type Border}">
+        <Setter Property="Background" Value="{StaticResource SubtleSurfaceBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource SoftBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="CornerRadius" Value="4" />
+        <Setter Property="Padding" Value="10" />
+    </Style>
+    <Style x:Key="InfoPanelStyle" TargetType="{x:Type Border}" BasedOn="{StaticResource TimenotifierCardStyle}">
+        <Setter Property="Background" Value="{StaticResource TintSurfaceBrush}" />
+        <Setter Property="BorderBrush" Value="#B7D9CF" />
+    </Style>
+    <Style x:Key="TimelineStatCardStyle" TargetType="{x:Type Border}" BasedOn="{StaticResource TimenotifierCardStyle}">
+        <Setter Property="Padding" Value="14,12" />
+        <Setter Property="CornerRadius" Value="6" />
+    </Style>
+    <Style x:Key="TimelineItemCardStyle" TargetType="{x:Type Border}" BasedOn="{StaticResource TimenotifierCardStyle}">
+        <Setter Property="Padding" Value="12" />
+        <Setter Property="CornerRadius" Value="4" />
+    </Style>
+    <Style x:Key="TimelineBadgeStyle" TargetType="{x:Type Border}">
+        <Setter Property="Background" Value="{StaticResource TintSurfaceBrush}" />
+        <Setter Property="CornerRadius" Value="3" />
+        <Setter Property="Padding" Value="6,2" />
+    </Style>
+    <Style x:Key="StatusBarPanelStyle" TargetType="{x:Type Border}">
+        <Setter Property="Background" Value="{StaticResource SurfaceBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource SoftBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="CornerRadius" Value="6" />
+        <Setter Property="Padding" Value="12,10" />
+    </Style>
+    <Style x:Key="GridCheckBoxStyle" TargetType="{x:Type CheckBox}">
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+</ResourceDictionary>

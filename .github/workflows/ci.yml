@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  dotnet:
+    name: .NET build and tests
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore
+        run: dotnet restore Timenotifier.Tests\Timenotifier.Tests.csproj
+
+      - name: Build
+        run: dotnet build Timenotifier.csproj --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test Timenotifier.Tests\Timenotifier.Tests.csproj --configuration Release --no-restore
+
+  agent-runtime:
+    name: AgentRuntime tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: AgentRuntime/requirements.txt
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check -r AgentRuntime/requirements.txt
+
+      - name: Test
+        run: python -m pytest AgentRuntime/tests -q

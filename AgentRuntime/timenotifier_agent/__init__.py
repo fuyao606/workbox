@@ -1,0 +1,2 @@
+"""LangGraph sidecar for Timenotifier."""
+

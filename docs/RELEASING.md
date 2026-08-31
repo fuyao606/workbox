@@ -25,9 +25,9 @@ working tree clean except for the intended release changes.
 ## Tag and publish
 
 ```powershell
-git tag -a v0.1.0 -m "Initial public release"
+git tag -a v0.1.1 -m "Release v0.1.1"
 git push origin main
-git push origin v0.1.0
+git push origin v0.1.1
 ```
 
 The `release.yml` workflow runs on `v*.*.*` tags. It restores, tests and publishes a

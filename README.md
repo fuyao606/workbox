@@ -188,9 +188,9 @@ GitHub Actions 会在 Windows runner 上执行 .NET 还原、构建和测试，�
 4. 创建带注释标签并推送，例如：
 
    ```powershell
-   git tag -a v0.1.0 -m "Initial public release"
+   git tag -a v0.1.1 -m "Release v0.1.1"
    git push origin main
-   git push origin v0.1.0
+   git push origin v0.1.1
    ```
 
 推送 `v*.*.*` 标签会触发 `.github/workflows/release.yml`，生成 Windows x64 压缩包
